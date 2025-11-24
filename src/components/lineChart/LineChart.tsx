@@ -23,7 +23,6 @@ const LineChartAB: React.FC<LineChartABProps> = () => {
         }
     };
 
-    const visibleKeys = selectedVariations.map(v => v.name.replaceAll(" ", "_"));
 
     return (
         <div style={{ width: "100%", height: 400 }}>
@@ -45,6 +44,7 @@ const LineChartAB: React.FC<LineChartABProps> = () => {
                             strokeWidth={2}
                         />
                     ))}
+
                 </LineChart>
             </ResponsiveContainer>
         </div>
